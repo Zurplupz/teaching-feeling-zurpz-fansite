@@ -1,0 +1,5 @@
+*.DB_store
+desktop.ini
+*.zip
+*.sublime*
+/legacy
