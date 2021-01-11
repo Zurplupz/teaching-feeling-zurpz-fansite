@@ -10,7 +10,7 @@
 }
 
 .transpanel {
-  background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -27,10 +27,10 @@
 .transpanel p { color: white }
 
 header {
-	background-image: url(../img/header_5.png);
+	background-image: url(../img/header_bg.png);
 	min-height: 270px;
-  background-position: center top;
-  background-repeat: no-repeat;
+	background-position: center top;
+	background-repeat: no-repeat;
 }
 
 .float{
@@ -42,9 +42,9 @@ header {
 
 #reload-btn {
 	background-image: url(../img/repeat.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
 	height:60px;
 	width:60px;
 	float: right;
@@ -52,9 +52,9 @@ header {
 
 #home-btn {
 	background-image: url(../img/home.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
 	height:34px;
 	width:122px;
 	float: right;
