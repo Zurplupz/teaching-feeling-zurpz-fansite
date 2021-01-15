@@ -1,10 +1,15 @@
+header {
+	background-image: url(../img/header_sm.webp);
+	min-height: 270px;
+	background-position: center top;
+}
+
 .main-container {
 	padding-bottom: 35px;
 }
 
 .bg {
-	background-image: url(../img/backgrounds/bg_2.jpg);
-
+	background-image: url(../img/backgrounds/bg_2.webp);
 	min-height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -28,14 +33,11 @@
 
 .transpanel p { color: white }
 
-header {
-	background-image: url(../img/header_bg.png);
-	min-height: 270px;
-	background-position: center top;
-	background-repeat: no-repeat;
+#nav-container {
+	display: none;
 }
 
-.float{
+.float {
 	position:fixed;
 	right:40px;
 	bottom:40px;
@@ -43,7 +45,7 @@ header {
 }
 
 #reload-btn {
-	background-image: url(../img/repeat.png);
+	background-image: url(../img/buttons/repeat.webp);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
@@ -52,41 +54,126 @@ header {
 	float: right;
 }
 
-#home-btn {
-	background-image: url(../img/home.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-	height:34px;
-	width:122px;
-	float: right;
-}
-
 #game-logo {
-	background-image: url(../img/game_logo.png);
+	background-image: url(../img/game_logo.webp);
 	height: 180px;
 	width: 300px;
 	background-size: contain;
 	background-repeat: no-repeat;
-}
-
-#about-button {
-	margin-top: -15px;
-	width: 150px;
-	height: 50px;
-	background-image: url(../img/about.png);
-	background-size: contain;
+	margin: auto;
 }
 
 #gallery-button {
-	background-image: url(../img/buttons/gallery.png);
+	background-image: url(../img/buttons/gallery.webp);
 	height: 64px;
 	width: 164px;
 }
 
-#nav-container {
-	padding-top: 10px
+a[href="#mobile-menu"] { margin: auto }
+
+a[href="#mobile-menu"] div {
+	background-image: url(../img/buttons/menu_sm.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 270px;
+    height: 70px;
 }
 
-#nav-container .col {
+#mobile-menu { width: 100% }
+
+#mobile-menu:not(:target) { display: none }
+
+#mobile-menu:target { 
+	display: block;
+    position: fixed;
+    height: 100vh;
+    text-align: center;
+    background-color: #000000c7;
+    color: white;
+}
+
+#mobile-menu-close div {
+	color: white;
+	position: fixed;
+	right: 0;
+    background: black;
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+    border: white solid 3px;
+    border-radius: 100%;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+#mobile-menu-close span {  }
+
+#mobile-menu ul {
+	list-style: none;
+	padding: 25px 0px 25px 0px;
+}
+
+#mobile-menu ul > li {
+    margin: auto;
+}
+
+#mobile-menu ul > li div {
+    height: 100px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: auto;
+}
+
+#gallery-button-sm { background-image: url(../img/buttons/gallery.webp); }
+
+/* tablet and up */
+@media screen and (min-width: 768px) {
+	#game-logo { margin: initial; }
+
+	#home-btn {
+		background-image: url(../img/buttons/home.webp);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+		height:34px;
+		width:122px;
+		float: right;
+	}
+
+	#about-button {
+		background-image: url(../img/buttons/about_sm.webp);
+		margin-top: -15px;
+		width: 150px;
+		height: 50px;
+		background-size: contain;
+	}
+
+	#nav-container {
+		display: block;
+		padding-top: 10px;
+	}
+
+	a[href="#mobile-menu"] { display: none }
+
+	#mobile-menu { display: none }
+}
+
+/* desktop and up */
+@media screen and (min-width: 1200px) {
+	header {
+		background-image: url(../img/header_bg.webp);
+		min-height: 270px;
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+
+	#about-button { 
+		background-image: url(../img/buttons/about.webp);
+		margin-top: -15px;
+		width: 150px;
+		height: 50px;
+		background-size: contain;
+	}
 }

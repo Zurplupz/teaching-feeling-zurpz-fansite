@@ -11,7 +11,7 @@ $(() => {
 
 		let bg = new_choices[Math.floor(Math.random() * bg_choice.length)];
 
-		let img = 'url(./img/backgrounds/' + bg + '.jpg)';
+		let img = 'url(./img/backgrounds/' + bg + '.webp)';
 
 		$('.bg').css('background-image', img);
 	}
