@@ -4,6 +4,13 @@ header {
 	background-position: center top;
 }
 
+footer {
+	background: black;
+	color: white;
+    padding: 25px 15px 25px 15px;
+    font-size: 0.8em;
+}
+
 .main-container {
 	padding-bottom: 35px;
 }
@@ -39,7 +46,8 @@ header {
 
 .float {
 	position:fixed;
-	right:40px;
+	z-index: 1060;
+	right:20px;
 	bottom:40px;
 	width: min-content;
 }
@@ -130,7 +138,13 @@ a[href="#mobile-menu"] div {
 
 /* tablet and up */
 @media screen and (min-width: 768px) {
+	footer {
+	    padding: 15px;
+	}
+
 	#game-logo { margin: initial; }
+
+	.float { right: 40px; }
 
 	#home-btn {
 		background-image: url(../img/buttons/home.webp);
@@ -148,6 +162,10 @@ a[href="#mobile-menu"] div {
 		width: 150px;
 		height: 50px;
 		background-size: contain;
+	}
+
+	#info-modal:target {
+		display: block;
 	}
 
 	#nav-container {
