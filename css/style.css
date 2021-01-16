@@ -135,6 +135,7 @@ a[href="#mobile-menu"] div {
 }
 
 #gallery-button-sm { background-image: url(../img/buttons/gallery.webp); }
+#about-button-sm { background-image: url(../img/buttons/about_b_sm.webp); }
 
 /* tablet and up */
 @media screen and (min-width: 768px) {
