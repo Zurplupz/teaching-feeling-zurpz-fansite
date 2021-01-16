@@ -16,7 +16,7 @@ $(() => {
 	if (typeof(Storage) !== "undefined") {
 		let warned = localStorage.getItem("warned");
 
-		if (!warned) warn();
+		if (!warned) setTimeout(() => warn(), 2500);
 	}
 
 });
